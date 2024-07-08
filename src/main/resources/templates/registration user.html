@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Регистрация пользователя</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация </title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/>
 </head>
 <body>
         <div class="container">
-            <div class="addUser">
-                <form method="POST" action="/users">
+            <h1>Registration</h1>
+                <form class="registration-form" method="post" action="/registration">
                     <label for="name">Name</label>
                     <br><input type="text" name="name" id="name"><br>
 
@@ -23,14 +25,16 @@
                     <label for="nick">Nick</label>
                     <br><input type="text" name="nick" id="nick"><br>
                     <label for="password">Password</label>
-                    <br><input type="number" name="password" id="password"><br>
-                    <label for="userdate">Userdate</label>
-                    <br><input type="localdate" name="userdate" id="userdate"><br>
+                    <br><input type="text" name="password" id="password"><br>
+                    <label for="Dataofbirth">Dataofbirth</label>
+                    <br><input type="localDate" name="Dataofbirth" id="Dataofbirth"><br>
                     <label for="email">Email</label>
                     <br><input type="text" name="email" id="email"><br>
-                        <button type="submit">Создать пользователя</button>
+                        <button type="submit" value="Register" id="Register">Регистрироваться</button>
+
                 </form>
-            </div>
         </div>
+
+        <script src="/js/script.js"></script>
 </body>
 </html>
